@@ -1,0 +1,618 @@
+*{
+    margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+   overflow-x: hidden;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(image/background-image.jpg);
+    background-position: center;
+   background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.main .Netflix{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.514);
+}
+
+.nav{
+    width: 100vw;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.573);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 200px;
+    box-shadow: 20px 20px  100px black;
+}
+
+.nav img{
+    width: 10vw;
+    
+}
+
+button{
+    font-size: 14px;
+    font-weight: 600;
+    background-color: red;
+    padding: 8px 20px;
+    border-radius: 7px;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+.content{
+    height: calc(100vh - 80px);
+    width: 100vw;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    
+}
+
+.content h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3.5vw;
+    font-weight: bold;
+}
+
+.content h1::-webkit-scrollbar{
+    width: 0;
+}
+
+.content p{
+    font-size: 15px;
+}
+
+.start input{
+    height: 50px;
+    width: 30vw;
+    font-size: 15px;
+    border: 1px solid #d62020;
+    outline: 0;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+}
+
+.start button{
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.section{
+    width: 100vw;
+    height: 80vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    border-top: 8px solid rgb(51, 50, 50);
+    border-bottom: 8px solid rgb(51, 50, 50);
+}
+
+.caption{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10vw;
+}
+.caption h1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+}
+.caption p{
+    color: white;
+    font-size: 1.5vw;
+    margin-top: 10px;
+}
+
+.Ads{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.Ads video{
+    position: absolute;
+    width: 30vw;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+
+.Ads img{
+    position: absolute;
+    width: 40vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.watch{
+        width: 100vw;
+        height: 100%;
+        background-color: black;
+        border-top: 5px solid rgb(51, 50, 50);
+        border-bottom: 5px solid rgb(51, 50, 50);
+}
+
+.watch{
+    display: flex;
+    padding: 5vw 10vw;
+}
+
+.online-image{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+}
+
+.online-caption{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.online-caption h1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+}
+.online-caption p{
+    color: white;
+    font-size: 1.5vw;
+    margin-top: 10px;
+}
+
+.kids{
+    width: 100vw;
+     height: 80vh;
+    background-color: black;
+    border-top: 5px solid rgb(51, 50, 50);
+    border-bottom: 5px solid rgb(51, 50, 50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.kids-image{
+    width: 40vw;
+    display: flex;
+    align-items: center;
+}
+
+.kids-image img{
+    width: 40vw;
+}
+
+.kids-caption{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kids-caption h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 3.5vw;
+}
+
+.kids-caption p{
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.questions{
+    width: 100vw;
+    height: fit-content;
+    background-color: black;
+    border-top: 5px solid rgb(51, 50, 50);
+    border-bottom: 5px solid rgb(51, 50, 50);
+    color: rgb(249, 247, 247);
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.questions h1{
+    font-size: 3.5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.question1{
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.question1 .question{
+    width: 70vw;
+    background-color: rgb(45, 45, 45);
+    padding: 28px 30px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question1 .details{
+    width: 70vw;
+    background-color: rgb(45, 45, 45);
+    font-size: 25px;
+    padding: 28px 30px;
+    display: none;
+    animation-name: visible;
+    animation-duration: 0.5s;
+    
+}
+
+@keyframes visible{
+    from{
+      opacity: 0;
+    }
+    
+    to{
+       opacity: 100;
+    }
+}
+
+.question1 .details p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.footer{
+    width: 100vw;
+    height: 60vh;
+    background-color: black;
+    border-top: 5px solid rgb(51, 50, 50);
+    border-bottom: 5px solid rgb(51, 50, 50);
+    color: rgb(198, 198, 198);
+    padding: 50px 150px ;
+}
+
+.footer-head{
+    color: rgb(183, 183, 183);
+    width: 100vw;
+    padding: 50px;
+    
+}
+
+.footer-parent{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    flex-wrap: wrap;
+
+}
+.footer-parent a{
+    color: rgb(176, 176, 176);
+    text-decoration: underline;
+    font-weight: 100;
+}
+.footer-child1{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 15px;
+}
+
+.footer-child2{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 15px;
+}
+
+.footer-child3{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 15px;
+}
+
+.footer-child4{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 15px;
+}
+
+@media (max-width: 900px) {
+.main{
+    height: 50vh;
+   }
+
+.Netflix{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   }
+
+.nav{
+    padding: 0px 20px;
+}
+
+.nav img{
+    width: 20vw;
+}
+
+.content{
+    height: 50vh;
+    width: 100vw;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 30px;
+    padding: 0px 40px;
+    gap: 30px;
+    
+}
+
+.content h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 7vw;
+    font-weight: bold;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.content h1::-webkit-scrollbar{
+    width: 0;
+}
+
+.content p{
+    font-size: 17px;
+    text-align: center;
+}
+
+.start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.start input{
+    height: 50px;
+    width: 80vw;
+    border: 1.5px solid rgb(255, 0, 0);
+    background-color: rgba(8, 133, 242, 0.088);
+}
+
+::placeholder{
+    color: rgb(217, 217, 217);
+}
+
+
+.start button{
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.section{
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(11, 11, 11);
+    display: flex;
+    flex-direction: column;
+}
+
+.caption{
+    width: 90vw;
+    text-align: center;
+    margin-left: 0vw;
+}
+.caption h1{
+    font-size: 7vw;
+    text-align: center;
+}
+.caption p{
+    font-size: 17px;
+    text-align: center;
+}
+
+.Ads{
+    width: 70vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.Ads video{
+    position: absolute;
+    width: 60vw;
+    top: 20%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+
+.Ads img{
+    position: absolute;
+    width: 80vw;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.watch{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    padding: 5vw 10vw;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+}
+
+.online-image{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+}
+
+
+.online-caption{
+    width: 80vw;
+    text-align: center;
+}
+
+.online-caption h1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 7vw;
+    font-weight: bold;
+}
+
+.online-caption p{
+    color: white;
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+.kids{
+    flex-direction: column-reverse;
+}
+
+.kids-caption{
+    width: 80vw;
+    text-align: center;
+}
+
+.kids h1{
+    font-size: 7.5vw;
+}
+
+.kids p{
+    font-size: 17px;
+}
+
+.kids-image{
+    width: 90vw;
+    display: flex;
+    align-items: center;
+}
+
+.kids-image img{
+    width: 90vw;
+}
+
+.questions h1{
+    font-size: 7vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.question1{
+    width: 100vw;
+    padding: 5px;
+   
+}
+
+.question1 .question{
+    width: 90vw;
+}
+
+.question1 .question p{
+    font-size: 17px;
+}
+
+.question1 .details{
+    width: 90vw;
+    font-size: 17px;
+}
+
+
+.footer{
+    width: 100vw;
+    height: fit-content;
+    background-color: black;
+    border-top: 5px solid rgb(51, 50, 50);
+    border-bottom: 5px solid rgb(51, 50, 50);
+    color: rgb(198, 198, 198);
+    padding: 50px 10px ;
+}
+
+.footer-parent{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 50px 10px;
+    margin-top: -30px;
+    flex-wrap: wrap;  
+}
+
+.footer-head{
+    width: 100vw;
+    padding: 0px 10px;
+}
+
+.footer-child1{
+    width: 40vw;
+}
+
+.footer-child2{
+    width: 40vw;
+}
+
+.footer-child3{
+    width: 40vw;
+}
+
+.footer-child4{
+    width: 40vw;
+}
+
+}

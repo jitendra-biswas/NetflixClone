@@ -1,0 +1,263 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+   text-decoration: none;
+}
+
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(image/background-image.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.main .Netflix{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.514);
+}
+
+.nav{
+    height: 80px;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.573);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 200px;
+    box-shadow: 50px 0px  50px black;
+}
+
+.nav img{
+    width: 10vw;
+    cursor: pointer;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    white-space: none;
+}
+
+form{
+    width: 450px;
+    height: 85vh;
+    background-color: rgba(0, 0, 0, 0.47);
+    padding: 35px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation-name: animation;
+    animation-duration: 1.2s;
+}
+
+@keyframes animation{
+    from{
+        scale: 0;
+    }
+
+    to{
+        scale: 1;
+
+    }
+}
+form h1{
+  color: #fff;
+}
+
+form input{
+    width: 100%;
+    height: 55px;
+    border-radius: 7px;
+    border: 1px solid rgb(58, 69, 70);
+    padding: 15px;
+    background-color: transparent;
+    outline: none;
+    color: white;
+}
+
+form span{
+    color: #adadad;
+    text-align: center;
+    height: auto;
+}
+form button{
+    width: 100%;
+    height: 50px;
+    border-radius: 7px;
+    outline: none;
+}
+
+.signin{
+    background-color: red;
+    color: #ffff;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.signin:hover{
+    background-color: rgb(188, 0, 0);
+}
+
+.signin-code{
+    background-color: #817f7f42;
+    font-weight: 600;
+    font-size: 15px;
+    color: #ffff;
+    border: none;
+    outline: none;
+}
+
+.signin-code:hover{
+    background-color: #4e4c4c42;
+}
+.forgot{
+    text-align: center;
+    margin-top: 2vh;
+}
+.forgot a{
+    text-decoration: none;
+    color: #e7e7e7;
+
+}
+
+.forgot a:hover{
+    text-decoration: underline;
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+    gap:10px
+}
+
+.remember input{
+    width: 20px;
+}
+
+.signup a{
+    text-decoration: none;
+    color: white;
+}
+
+.signup a:hover{
+    text-decoration: underline;
+}
+
+form p{
+    color: #c0b9b9;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+.Netflix .footer{
+    width: 100vw;
+    height: 50vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.contact{
+    width: 100vw;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0px 100px;
+}
+
+.contact-us{
+    width: 100%;
+}
+.contact-us a{
+    color: #adadad;
+}
+
+.contact-us a:hover{
+    text-decoration: underline;
+}
+
+.contact2{
+    display: flex;
+    width: 100vw;
+    height: 20vh;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact2 a{
+    color: #adadad;
+    width: fit-content;
+   text-decoration: underline;
+   width: 40vw;
+}
+
+.language{
+    width: 100%;
+}
+
+.language select{
+    background-color: transparent;
+    color: #adadad;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+}
+
+
+.language{
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 3px
+}
+.language i{
+    color: white;
+}
+
+
+@media (max-width: 600px){
+.Netflix .nav{
+        padding: 0px 10px;
+    }
+
+.Netflix .nav img{
+    width: 30vw;
+}
+
+
+.contact{
+    padding: 0px 10px;
+}
+
+.contact .contact-us a{
+    color: #adadad;
+}
+
+.content2{
+    gap: 5px;
+}
+.contact2 a{
+    width: 40vw;
+    color: #adadad;
+}
+}
